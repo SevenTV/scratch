@@ -1,0 +1,11 @@
+[workspace]
+
+members = [
+    "apps/*",
+    "common",
+]
+
+resolver = "2"
+
+[workspace.dependencies]
+common = { path = "common" }

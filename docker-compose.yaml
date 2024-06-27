@@ -1,0 +1,26 @@
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27111:27017"
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 4G
+    volumes:
+      - ./tmp/mongodb:/data/db
+
+  typesense:
+    image: typesense/typesense:26.0
+    restart: on-failure
+    ports:
+      - "8108:8108"
+    command: '--data-dir /data --api-key=xyz --enable-cors'
+    volumes:
+      - ./tmp/typesense:/data
+    deploy:
+      resources:
+        limits:
+          cpus: '4'
+          memory: 4G
