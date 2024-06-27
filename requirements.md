@@ -19,29 +19,3 @@
         duration and or time period
     - gift:
         amount and or time period
-
-## Emote Set System
-
-- emotes can be assigned to an emote set(s)
-- emote set(s) can be active on a user(s)
-
-- need to be able to count the number of unique users that have an emote active
-- need to be able to get a list of all the users that have a specific emote/emote-set active
-- need to be able to get a list of all the emotes/emote-sets that a user has active
-
-## Examples
-
-```yaml
-SubscriptionA:
-    - role: RoleA
-    - badge: BadgeA
-    - paint: PaintA
-    - emote_set: EmoteSetA
-    - entitlements:
-        - condition: duration
-          duration: 1 month
-          badge: BadgeB
-        - condition: duration
-          duration: 3 months
-          badge: BadgeC
-```
