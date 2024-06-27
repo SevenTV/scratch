@@ -104,9 +104,9 @@ The `to` node could be another group of entitlements, which would allow for a tr
 
 For example:
 
-`User` -> `Moderator Role` -> `Moderator Badge`
-`User` -> `Subscription` -> `3 month subscriber perk` -> `3 month subscriber badge` & `3 month subscriber paint`
-`User` -> `Subscription` -> `January Paint Bundle` -> `January Paint 1` & `January Paint 2` & `January Paint 3`
+- `User` -> `Moderator Role` -> `Moderator Badge`
+- `User` -> `Subscription` -> `3 month subscriber perk` -> `3 month subscriber badge` & `3 month subscriber paint`
+- `User` -> `Subscription` -> `January Paint Bundle` -> `January Paint 1` & `January Paint 2` & `January Paint 3`
 
 We would need an edge between the user and the moderator role which would imply that the user has the moderator role, and when we traverse the graph we would see that the user has the moderator badge.
 
