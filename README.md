@@ -71,7 +71,7 @@ This might look a bit complicated, but it's actually quite simple. See (requirem
 - A user can be assigned items through a subscription, and there can be conditional requirements such as the user must have been subscribed for a certain amount of time to get this entitlement. (think of a 3 month subscriber badge)
 - A user can be assigned items for performing an action, such as gifting x amount of items during a certain time period. (think of the x-mas gifter badge)
 
-### constriants:
+### constraints:
 
 The problem is how do we design a system that allows for:
 - Fast rollout of new entitlements
