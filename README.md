@@ -165,6 +165,8 @@ So we recursively traverse the graph until we have no more edges to traverse.
 
 Yes. We are doing indexed lookups. In the example I showed a SQL query but in reality we use mongodb. We can also do dataloading on this as well which will amortize the cost of the lookups over multiple requests.
 
+We typically find in our set we need 3-5 lookups to get all the entitlements for a user who has a lot of entitlements. However most users don't have many and we could get theirs all in one lookup.
+
 #### Why not use a graph database?
 
 We tested initially with a few graph databases however surprisingly they are not very performant on terversal queries. I imagine that if we actually wanted to do any graph operations such as shortest path or something like that a graph database would be better, but for our use case we just need to traverse the graph so a normal database is fine.
